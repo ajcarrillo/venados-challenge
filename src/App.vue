@@ -14,13 +14,12 @@
 </template>
 
 <script>
-
-  import Header from "@/components/Header"
-  import Sidebar from "@/components/Sidebar"
-  import Main from "@/components/Main"
   import 'normalize.css'
   import './assets/scss/global.scss'
   import './assets/scss/app.scss'
+  import Header from "@/components/Header"
+  import Sidebar from "@/components/Sidebar"
+  import Main from "@/components/Main"
 
   export default {
     name: 'App',
