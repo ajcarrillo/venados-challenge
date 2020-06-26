@@ -1,14 +1,12 @@
-aside {
-  //border: 1px solid blue;
-}
-
 .left-sidebar {
+  //border: 1px solid blue;
   visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
   height: 100vh;
   background: white;
+  box-sizing: border-box;
 
   .logo {
     background: url('../../assets/menubackground.png');
@@ -25,6 +23,8 @@ aside {
 
   .aside-content {
     padding: 1rem;
+    background-color: #FAFAFA;
+    height: 100vh;
 
     .menu{
       list-style: none;
@@ -34,12 +34,20 @@ aside {
         margin-bottom: 1rem;
         & a{
           text-decoration: none;
-          color: black;
+          color: #2c3e50;
           &.active{
             font-weight: 700;
           }
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .left-sidebar{
+    visibility: visible;
+    position: unset;
+    max-width: 400px;
   }
 }

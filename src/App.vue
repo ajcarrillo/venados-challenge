@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <input type="checkbox" id="open" class="sidebar-checkbox">
-    <Sidebar></Sidebar>
-    <Main>
-      <router-view></router-view>
-    </Main>
+    <div class="app-wrapper">
+      <Header></Header>
+      <div class="flex">
+        <input type="checkbox" id="open" class="sidebar-checkbox">
+        <Sidebar></Sidebar>
+        <Main>
+          <router-view></router-view>
+        </Main>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,6 +20,7 @@
   import Main from "@/components/Main"
   import 'normalize.css'
   import './assets/scss/global.scss'
+  import './assets/scss/app.scss'
 
   export default {
     name: 'App',

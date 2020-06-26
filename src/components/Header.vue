@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <div class="header-content">
       <label for="open" class="sidebar-open"></label>
     </div>

@@ -1,0 +1,34 @@
+.app-wrapper{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 1199px) {
+  .app-wrapper {
+    max-width: 1280px;
+    .flex{
+      display: flex;
+      .left-sidebar{
+        width: 20%;
+      }
+      .main{
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .app-wrapper {
+    .flex{
+      .left-sidebar{
+        width: 35%;
+      }
+      .main{
+        width: 65%;
+      }
+    }
+  }
+}
