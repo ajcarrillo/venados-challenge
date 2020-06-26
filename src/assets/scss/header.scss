@@ -1,0 +1,28 @@
+header {
+  //border: 1px solid red;
+  position: sticky;
+}
+
+.header-content{
+  padding: 1rem;
+}
+
+.sidebar {
+  &-open {
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    cursor: pointer;
+    background: url('../../assets/bars-solid.svg') no-repeat center;
+  }
+
+  &-checkbox {
+    display: none;
+    &:checked{
+      & ~ .left-sidebar{
+        visibility: visible;
+      }
+    }
+  }
+}

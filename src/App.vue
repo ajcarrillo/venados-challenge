@@ -1,24 +1,28 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <Header></Header>
+    <input type="checkbox" id="open" class="sidebar-checkbox">
+    <Sidebar></Sidebar>
+    <Main>
+      <router-view></router-view>
+    </Main>
   </div>
 </template>
 
 <script>
 
+  import Header from "@/components/Header"
+  import Sidebar from "@/components/Sidebar"
+  import Main from "@/components/Main"
+  import 'normalize.css'
+  import './assets/scss/global.scss'
+
   export default {
     name: 'App',
-    components: {}
+    components: {Main, Sidebar, Header}
   }
 </script>
 
 <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
+
 </style>

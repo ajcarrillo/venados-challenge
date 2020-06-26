@@ -1,10 +1,13 @@
 <template>
-  <h1>Home view</h1>
+  <main>
+    <slot></slot>
+  </main>
 </template>
 
 <script>
+  import '../assets/scss/main.scss'
   export default {
-    name: "HomeView"
+    name: "Main"
   }
 </script>
 

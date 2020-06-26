@@ -1,0 +1,45 @@
+aside {
+  //border: 1px solid blue;
+}
+
+.left-sidebar {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: white;
+
+  .logo {
+    background: url('../../assets/menubackground.png');
+    background-size: cover;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    &-img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .aside-content {
+    padding: 1rem;
+
+    .menu{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      &-item{
+        margin-bottom: 1rem;
+        & a{
+          text-decoration: none;
+          color: black;
+          &.active{
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
