@@ -10,6 +10,14 @@ const store = new Vuex.Store({
     statistics: [],
     players: [],
   },
+  getters:{
+    getCopaMxGames: state => {
+      return state.games.filter(game=> game.league === 'Copa MX')
+    },
+    getAscensoMxGames: state => {
+      return state.games.filter(game=> game.league === 'Ascenso MX')
+    }
+  },
   actions: {
     async fetchGames({commit}) {
       let {data} = await Services.fetchGames()
@@ -26,7 +34,7 @@ const store = new Vuex.Store({
   },
   mutations: {
     SET_GAMES(state, payload) {
-      state.games = payload
+      state.games = payload.data.games
     },
     SET_STATISTICS(state, payload) {
       state.statistics = payload

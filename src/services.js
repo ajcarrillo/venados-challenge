@@ -1,19 +1,20 @@
 import axios from 'axios'
 
 const venadosDacodes = axios.create({
-  baseURL: 'https://venados.dacodes.mx/api/',
   timeout: 10000,
-  headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json'}
+  headers: {
+    'Accept': 'application/json',
+  }
 })
 
 export default {
   fetchGames(){
-    return venadosDacodes.get('games');
+    return venadosDacodes.get('/api/games');
   },
   fetchStatistics(){
-    return venadosDacodes.get('statistics')
+    return venadosDacodes.get('/api/statistics')
   },
   fetchPlayers(){
-    return venadosDacodes.get('players')
+    return venadosDacodes.get('/api/players')
   }
 }
