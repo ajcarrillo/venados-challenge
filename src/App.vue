@@ -3,7 +3,7 @@
     <div class="app-wrapper">
       <Header></Header>
       <div class="flex">
-        <input type="checkbox" id="open" class="sidebar-checkbox">
+        <input type="checkbox" id="open" class="sidebar-checkbox" ref="menu-checked">
         <Sidebar></Sidebar>
         <Main>
           <router-view></router-view>

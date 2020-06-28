@@ -42,6 +42,9 @@
     created() {
       this.getPlayers()
     },
+    mounted() {
+      this.$root.$el.querySelector('#open').checked = false
+    },
     methods: {
       async getPlayers() {
         try {

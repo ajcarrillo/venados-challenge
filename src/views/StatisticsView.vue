@@ -49,6 +49,9 @@
     created() {
       this.getStatistics()
     },
+    mounted() {
+      this.$root.$el.querySelector('#open').checked = false
+    },
     methods: {
       async getStatistics() {
         try {

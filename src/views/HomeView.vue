@@ -33,6 +33,7 @@
     },
     mounted() {
       this.getGames()
+      this.$root.$el.querySelector('#open').checked = false
     },
     methods: {
       async getGames() {
