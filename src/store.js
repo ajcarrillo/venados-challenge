@@ -37,7 +37,7 @@ const store = new Vuex.Store({
       state.games = payload.data.games
     },
     SET_STATISTICS(state, payload) {
-      state.statistics = payload
+      state.statistics = payload.data.statistics
     },
     SET_PLAYERS(state, payload) {
       state.players = payload
