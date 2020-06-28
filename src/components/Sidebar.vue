@@ -8,13 +8,13 @@
       <div class="aside-content">
         <ul class="menu">
           <li class="menu-item">
-            <router-link to="/home" exact exact-active-class="active">Home</router-link>
+            <router-link :to="{name: 'home'}" exact exact-active-class="active">Home</router-link>
           </li>
           <li class="menu-item">
-            <router-link to="/statistics" exact exact-active-class="active">Estadísticas</router-link>
+            <router-link :to="{name: 'statistics'}" exact exact-active-class="active">Estadísticas</router-link>
           </li>
           <li class="menu-item">
-            <router-link to="/players" exact exact-active-class="active">Jugadores</router-link>
+            <router-link :to="{name: 'players'}" exact exact-active-class="active">Jugadores</router-link>
           </li>
         </ul>
       </div>
