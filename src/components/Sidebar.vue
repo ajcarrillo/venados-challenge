@@ -3,6 +3,7 @@
     <div style="position: sticky; top: 0">
       <div class="logo">
         <img class="logo-img" src="../assets/logo.png" alt="Venados FC">
+        <p>Venados FC</p>
       </div>
       <div class="aside-content">
         <ul class="menu">

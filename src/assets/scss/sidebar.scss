@@ -11,13 +11,19 @@
   .logo {
     background: url('../../assets/menubackground.png');
     background-size: cover;
-    height: 200px;
+    height: 150px;
     box-sizing: border-box;
     padding: 1rem;
 
     &-img {
       width: 80px;
       height: 80px;
+    }
+
+    p{
+      color: white;
+      font-weight: 700;
+      font-size: 1.8rem;
     }
   }
 
