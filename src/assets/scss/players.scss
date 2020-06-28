@@ -1,0 +1,47 @@
+.players {
+  * {
+    box-sizing: border-box;
+  }
+
+  .players-content {
+    .players-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      li {
+        user-select: none !important;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.4rem;
+        flex: 1 1 100px;
+
+        .player-image {
+          border: 1px solid #7ec850;
+          border-radius: 50%;
+          overflow: hidden;
+          width: 70px;
+          height: 70px;
+          position: relative;
+          text-align: center;
+          margin: 0 auto;
+
+          img{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            top:10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
