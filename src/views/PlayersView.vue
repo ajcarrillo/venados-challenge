@@ -1,10 +1,14 @@
 <template>
   <div>
+    <PlayerDetail v-if="showModal"
+                  @close="showModal = false"
+                  :selected-player="selectedPlayer"
+    ></PlayerDetail>
     <div class="players">
       <div class="players-content">
         <ul class="players-list">
-          <template v-for="roles in players">
-            <li v-for="(player, index) in roles" :key="index">
+          <template v-for="(roles, key) in players">
+            <li v-for="(player, index) in roles" :key="player.number" @click="goToPlayerView(index, key)">
               <div class="player-image">
                 <img :src="player.image" alt="" style="width: 50px">
               </div>
@@ -23,13 +27,16 @@
 <script>
   import '../assets/scss/players.scss'
   import {mapActions, mapState} from 'vuex'
+  import PlayerDetail from "@/components/PlayerDetail"
 
   export default {
     name: "PlayersView",
+    components: {PlayerDetail},
     data() {
       return {
         fetchingPlayers: false,
-        playerSelected: {empty: true}
+        selectedPlayer: {},
+        showModal: false
       }
     },
     created() {
@@ -46,6 +53,10 @@
           this.fetchingPlayers = false
         }
       },
+      goToPlayerView(index, roles) {
+        this.selectedPlayer = this.players[roles][index]
+        this.showModal = true
+      },
       ...mapActions([
         'fetchPlayers'
       ])
@@ -58,6 +69,6 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 
 </style>
