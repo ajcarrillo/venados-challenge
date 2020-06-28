@@ -2,10 +2,7 @@
   <div>
     <template v-if="months.length > 0">
       <div v-for="month in months" :key="month" class="games-list">
-        <div class="games-month">
-          <p class="games-month-name">{{ month }}</p>
-          <Game v-for="(game, index) in draft" :game="game" :key="index"></Game>
-        </div>
+        <GameMonth :games="games" :month="month"></GameMonth>
       </div>
     </template>
     <template v-else>
@@ -18,12 +15,12 @@
 
 <script>
   import '../assets/scss/gamesList.scss'
-  import Game from "@/components/Game"
   import {moment} from '@/bootstrap'
-  
+  import GameMonth from "@/components/GameMonth"
+
   export default {
     name: "GamesList",
-    components: {Game},
+    components: {GameMonth},
     props: {
       games: {
         type: Array,
@@ -32,31 +29,16 @@
     },
     data() {
       return {
-        allMonths: [
-          {'1': 'ENERO'},
-          {'2': 'FEBRERO'},
-          {'3': 'MARZO'},
-          {'4': 'ABRIL'},
-          {'5': 'MAYO'},
-          {'6': 'JUNIO'},
-          {'7': 'JULIO'},
-          {'8': 'AGOSTO'},
-          {'9': 'SEPTIEMBRE'},
-          {'10': 'OCTUBE'},
-          {'11': 'NOVIEMBRE'},
-          {'12': 'DICIEMBRE'},
-        ],
-        draft: []
       }
     },
     methods: {},
     computed: {
       months() {
-        if (this.draft.length === 0) return []
+        if (this.games.length === 0) return []
 
         let allMonths = []
 
-        this.draft.forEach(game => {
+        this.games.forEach(game => {
           allMonths.push(moment(game.datetime).format('MMMM').toUpperCase())
         })
 
@@ -66,9 +48,6 @@
       },
     },
     watch: {
-      games(val) {
-        this.draft = val
-      }
     },
   }
 </script>

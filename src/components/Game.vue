@@ -10,7 +10,7 @@
     <div class="games-info">
       <div class="local-team" :class="orderLocal">
         <img src="../assets/logo.png" :alt="local.name" style="height: 50px; width: 50px">
-        <p>{{ local.name }}</p>
+        <p class="team-name">{{ local.name }}</p>
       </div>
       <div class="score">
         <span>{{ local.score }}</span>
@@ -19,7 +19,7 @@
       </div>
       <div class="opponent-team" :class="orderVisit">
         <img :src="opponent.image" :alt="opponent.name" style="height: 50px; width: 50px">
-        <p>{{ opponent.name }}</p>
+        <p class="team-name">{{ opponent.name }}</p>
       </div>
     </div>
   </div>
