@@ -7,7 +7,7 @@
     </template>
     <template v-else>
       <div>
-        <p>Seleccionar torneo</p>
+        <p style="text-align: center">Seleccionar torneo</p>
       </div>
     </template>
   </div>

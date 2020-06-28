@@ -1,12 +1,12 @@
 .left-sidebar {
-  //border: 1px solid blue;
   visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
-  background: white;
   box-sizing: border-box;
   z-index: 1;
+  background-color: #FAFAFA;
+  min-height: 100vh;
 
   .logo {
     background: url('../../assets/menubackground.png');
@@ -23,7 +23,6 @@
 
   .aside-content {
     padding: 1rem;
-    background-color: #FAFAFA;
 
     .menu{
       list-style: none;
