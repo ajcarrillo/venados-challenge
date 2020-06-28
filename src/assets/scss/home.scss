@@ -5,13 +5,12 @@
   .logos-container {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     .club-logo,
     .ascenso-mx-logo,
     .copa-mx-logo {
-      text-align: center;
       align-self: center;
-      border: 1px solid red;
       box-sizing: border-box;
     }
 
@@ -27,8 +26,23 @@
 
     .ascenso-mx-logo,
     .copa-mx-logo {
-      width: 50%;
       cursor: pointer;
+      padding: 1.6rem 0;
+      flex: 1 1 0px;
+    }
+
+    .club-logo {
+      text-align: center;
+    }
+
+    .copa-mx-logo {
+      text-align: right;
+      margin-right: .8rem;
+    }
+
+    .ascenso-mx-logo {
+      text-align: left;
+      margin-left: .8rem;
     }
   }
 }
