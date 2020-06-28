@@ -11,10 +11,10 @@ const store = new Vuex.Store({
     players: [],
   },
   getters:{
-    getCopaMxGames: state => {
+    copaMxGames: state => {
       return state.games.filter(game=> game.league === 'Copa MX')
     },
-    getAscensoMxGames: state => {
+    ascensoMxGames: state => {
       return state.games.filter(game=> game.league === 'Ascenso MX')
     }
   },

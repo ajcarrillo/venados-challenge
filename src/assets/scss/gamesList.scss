@@ -1,0 +1,15 @@
+.games-list {
+  color: white;
+  font-weight: 700;
+
+  .games-month {
+    border: 1px solid red;
+
+    &-name {
+      background-color: #747474;
+      margin: 0;
+      padding: 1rem;
+      border: 1px solid blue;
+    }
+  }
+}
