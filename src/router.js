@@ -10,26 +10,23 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/venados-challenge'
-  },
-  {
-    path: '/venados-challenge',
     component: HomeView,
     name: 'home'
   },
   {
-    path: '/venados-challenge/statistics',
+    path: '/statistics',
     component: StatisticsView,
     name: 'statistics'
   },
   {
-    path: '/venados-challenge/players',
+    path: '/players',
     component: PlayersView,
     name: 'players'
   }
 ]
 
 const router = new VueRouter({
+  base: '/venados-challenge/',
   mode: 'history',
   routes
 })
