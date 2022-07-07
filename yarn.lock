@@ -2286,11 +2286,6 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
-collect.js@^4.27.3:
-  version "4.27.3"
-  resolved "https://registry.yarnpkg.com/collect.js/-/collect.js-4.27.3.tgz#e81efff5c4c92a713f83ecef6648cdaded03ed34"
-  integrity sha512-2nmoyhUJbhjVVE0W9W0cSBeg8/PL3ObGe1ijj9WDlLG3RrpvePsBZd6p3uTm1dTAUKJVd3qT8mnH6iXCdENEHQ==
-
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/collection-visit/-/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
@@ -5304,10 +5299,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-moment@^2.27.0:
-  version "2.27.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
-  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
+moment@^2.29.4:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
